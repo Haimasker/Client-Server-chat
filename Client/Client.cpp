@@ -150,7 +150,7 @@ bool processInstructions(std::vector<std::string> splittedMessage) {
 	if (splittedMessage[0] == "!disconnect" && splittedMessage.size() == 1) {
 		setColor("red");
 		if (Connection == INVALID_SOCKET)
-			printf("You are alredy disconnected from any server\n\n");
+			printf("You are already disconnected from any server\n\n");
 		else {
 			closesocket(Connection);
 			Connection = INVALID_SOCKET;
@@ -235,7 +235,7 @@ void main(int argc, char* argv[]) {
 	setColor("blue");
 	printf("Use command \'!help\' to get more information\n\n");
 	setColor("white");
-	
+
 	while (1) {
 		setColor("green");
 
