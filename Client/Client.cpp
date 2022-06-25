@@ -112,7 +112,7 @@ bool processInstructions(std::vector<std::string> splittedMessage) {
 		}
 		else {
 			setColor("red");
-			printf("You are alredy connected to the server\n\n");
+			printf("You are alraedy connected to the server\n\n");
 		}
 		setColor("white");
 		return true;
